@@ -65,21 +65,21 @@
     }
     #progress-bar {
       width: 100%;
-      background-color: #d6d6d6;
+      background-color: #003058;
       border-radius: 8px;
       overflow: hidden;
-      height: 32px;
+      height: 36px;
       margin-bottom: 20px;
       position: fixed;
       top: 0;
       left: 0;
       z-index: 999;
-      border: 2px solid #003058;
+      border: 2px solid #0078d4;
     }
     #progress {
       height: 100%;
       width: 0;
-      background-color: #0078d4;
+      background-color: #00c851;
       transition: width 0.3s;
     }
     #progress-text {
@@ -88,9 +88,10 @@
       left: 50%;
       transform: translateX(-50%);
       color: #ffffff;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: bold;
-      line-height: 32px;
+      line-height: 36px;
+      text-shadow: 1px 1px 2px #000;
     }
     .section {
       display: none;
@@ -259,10 +260,6 @@
     }
 
     document.getElementById('submit').addEventListener('click', () => {
-      if (answeredSet.size < quizData.length) {
-        alert("Please answer all questions before submitting.");
-        return;
-      }
       document.getElementById('final-score').textContent = `Final Score: ${score} / ${quizData.length} (${Math.round((score / quizData.length) * 100)}%)`;
       document.getElementById('summary-page').style.display = 'block';
       document.getElementById('submit').style.display = 'none';
