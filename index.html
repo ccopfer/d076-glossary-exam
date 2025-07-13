@@ -11,6 +11,7 @@
       padding: 20px;
       margin: 0;
       box-sizing: border-box;
+      position: relative;
     }
     *, *::before, *::after {
       box-sizing: inherit;
@@ -37,6 +38,10 @@
       padding: 10px;
       margin-top: 10px;
       cursor: pointer;
+    }
+    .feedback {
+      margin-top: 10px;
+      font-weight: bold;
     }
     button {
       display: block;
@@ -88,6 +93,30 @@
       font-size: 0.9rem;
       line-height: 20px;
     }
+    .section {
+      display: none;
+    }
+    .active-section {
+      display: block;
+    }
+    #nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #003058;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -97,8 +126,11 @@
     <div id="progress-text">0%</div>
   </div>
   <div id="quiz"></div>
+  <div id="nav-buttons"></div>
   <button id="submit">Submit Answers</button>
   <div id="score-summary"></div>
+  <button id="scrollTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+
   <script>
     let quizData = [];
     let score = 0;
@@ -123,7 +155,7 @@
       const total = quizData.length;
       let answered = 0;
       quizData.forEach((q, index) => {
-        if (document.querySelector(`input[name="q${index}"]:checked`)) {
+        if (document.querySelector(`input[name='q${index}']:checked`)) {
           answered++;
         }
       });
@@ -134,33 +166,60 @@
 
     function renderQuiz() {
       const quizContainer = document.getElementById('quiz');
-      quizData.forEach((q, index) => {
-        const div = document.createElement('div');
-        div.className = 'question-container';
-        div.innerHTML = `<p><strong>Q${index + 1}:</strong> ${q.question}</p>`;
+      const navButtons = document.getElementById('nav-buttons');
+      const sectionSize = 50;
+      const totalSections = Math.ceil(quizData.length / sectionSize);
 
-        const choicesDiv = document.createElement('div');
-        choicesDiv.className = 'choices';
-        q.choices.forEach((choice, i) => {
-          const id = `q${index}_choice${i}`;
-          choicesDiv.innerHTML += `
-            <label><input type="radio" name="q${index}" value="${i}" id="${id}" onchange="updateProgress()" /> ${choice}</label>
-          `;
-        });
-        div.appendChild(choicesDiv);
-        quizContainer.appendChild(div);
-      });
+      for (let s = 0; s < totalSections; s++) {
+        const sectionDiv = document.createElement('div');
+        sectionDiv.className = 'section';
+        if (s === 0) sectionDiv.classList.add('active-section');
+        sectionDiv.id = `section-${s}`;
+
+        for (let i = s * sectionSize; i < Math.min((s + 1) * sectionSize, quizData.length); i++) {
+          const q = quizData[i];
+          const div = document.createElement('div');
+          div.className = 'question-container';
+          div.innerHTML = `<p><strong>Q${i + 1}:</strong> ${q.question}</p>`;
+
+          const choicesDiv = document.createElement('div');
+          choicesDiv.className = 'choices';
+          q.choices.forEach((choice, c) => {
+            const id = `q${i}_choice${c}`;
+            choicesDiv.innerHTML += `
+              <label><input type="radio" name="q${i}" value="${c}" id="${id}" onchange="updateProgress()" /> ${choice}</label>
+            `;
+          });
+
+          div.appendChild(choicesDiv);
+          div.innerHTML += `<div class="feedback" id="feedback-${i}"></div>`;
+          sectionDiv.appendChild(div);
+        }
+        quizContainer.appendChild(sectionDiv);
+
+        const button = document.createElement('button');
+        button.textContent = `Section ${s + 1}`;
+        button.onclick = () => {
+          document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active-section'));
+          document.getElementById(`section-${s}`).classList.add('active-section');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        navButtons.appendChild(button);
+      }
     }
 
     document.getElementById('submit').addEventListener('click', () => {
       score = 0;
       quizData.forEach((q, index) => {
-        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        const selected = document.querySelector(`input[name='q${index}']:checked`);
         const container = document.querySelectorAll('.question-container')[index];
+        const feedback = document.getElementById(`feedback-${index}`);
         if (selected) {
           const selectedValue = selected.nextSibling.textContent.trim();
           const labels = container.querySelectorAll('label');
           labels.forEach(label => {
+            const input = label.querySelector('input');
+            input.disabled = true;
             const choiceText = label.textContent.trim();
             label.classList.remove('correct', 'incorrect');
             if (choiceText === q.choices[q.answer]) {
@@ -170,7 +229,12 @@
             }
           });
           if (selectedValue === q.choices[q.answer]) {
+            feedback.textContent = 'Correct!';
+            feedback.style.color = 'green';
             score++;
+          } else {
+            feedback.textContent = `Incorrect. Correct answer: ${q.choices[q.answer]}`;
+            feedback.style.color = 'red';
           }
         }
       });
