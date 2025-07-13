@@ -65,20 +65,21 @@
     }
     #progress-bar {
       width: 100%;
-      background-color: #e0e0e0;
+      background-color: #d6d6d6;
       border-radius: 8px;
       overflow: hidden;
-      height: 20px;
+      height: 32px;
       margin-bottom: 20px;
       position: fixed;
       top: 0;
       left: 0;
       z-index: 999;
+      border: 2px solid #003058;
     }
     #progress {
       height: 100%;
       width: 0;
-      background-color: #003058;
+      background-color: #0078d4;
       transition: width 0.3s;
     }
     #progress-text {
@@ -86,9 +87,10 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      color: white;
-      font-size: 0.9rem;
-      line-height: 20px;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 32px;
     }
     .section {
       display: none;
@@ -216,10 +218,6 @@
         const button = document.createElement('button');
         button.textContent = `Section ${s + 1}`;
         button.onclick = () => {
-          if (answeredSet.size < quizData.length) {
-            alert("Please answer all questions before navigating sections.");
-            return;
-          }
           document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active-section'));
           document.getElementById(`section-${s}`).classList.add('active-section');
           window.scrollTo({ top: 0, behavior: 'smooth' });
