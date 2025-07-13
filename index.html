@@ -154,14 +154,20 @@
     function updateProgress() {
       const total = quizData.length;
       let answered = 0;
+      let correct = 0;
       quizData.forEach((q, index) => {
-        if (document.querySelector(`input[name='q${index}']:checked`)) {
+        const selected = document.querySelector(`input[name='q${index}']:checked`);
+        if (selected) {
           answered++;
+          const selectedValue = selected.nextSibling.textContent.trim();
+          if (selectedValue === q.choices[q.answer]) {
+            correct++;
+          }
         }
       });
-      const percent = (answered / total) * 100;
+      const percent = (correct / total) * 100;
       document.getElementById('progress').style.width = `${percent}%`;
-      document.getElementById('progress-text').textContent = `${Math.round(percent)}%`;
+      document.getElementById('progress-text').textContent = `Correct: ${correct} / ${total} (${Math.round(percent)}%)`;
     }
 
     function renderQuiz() {
@@ -187,7 +193,7 @@
           q.choices.forEach((choice, c) => {
             const id = `q${i}_choice${c}`;
             choicesDiv.innerHTML += `
-              <label><input type="radio" name="q${i}" value="${c}" id="${id}" onchange="updateProgress()" /> ${choice}</label>
+              <label><input type="radio" name="q${i}" value="${c}" id="${id}" onchange="handleSelection(${i}, '${choice.replace(/'/g, "\'")}')" /> ${choice}</label>
             `;
           });
 
@@ -208,44 +214,34 @@
       }
     }
 
-    document.getElementById('submit').addEventListener('click', () => {
-      score = 0;
-      quizData.forEach((q, index) => {
-        const selected = document.querySelector(`input[name='q${index}']:checked`);
-        const container = document.querySelectorAll('.question-container')[index];
-        const feedback = document.getElementById(`feedback-${index}`);
-        if (selected) {
-          const selectedValue = selected.nextSibling.textContent.trim();
-          const labels = container.querySelectorAll('label');
-          labels.forEach(label => {
-            const input = label.querySelector('input');
-            input.disabled = true;
-            const choiceText = label.textContent.trim();
-            label.classList.remove('correct', 'incorrect');
-            if (choiceText === q.choices[q.answer]) {
-              label.classList.add('correct');
-            } else if (choiceText === selectedValue) {
-              label.classList.add('incorrect');
-            }
-          });
-          if (selectedValue === q.choices[q.answer]) {
-            feedback.textContent = 'Correct!';
-            feedback.style.color = 'green';
-            score++;
-          } else {
-            feedback.textContent = `Incorrect. Correct answer: ${q.choices[q.answer]}`;
-            feedback.style.color = 'red';
-          }
+    function handleSelection(index, selectedValue) {
+      const q = quizData[index];
+      const container = document.querySelectorAll('.question-container')[index];
+      const feedback = document.getElementById(`feedback-${index}`);
+      const labels = container.querySelectorAll('label');
+
+      labels.forEach(label => {
+        const input = label.querySelector('input');
+        input.disabled = true;
+        const choiceText = label.textContent.trim();
+        label.classList.remove('correct', 'incorrect');
+        if (choiceText === q.choices[q.answer]) {
+          label.classList.add('correct');
+        } else if (choiceText === selectedValue) {
+          label.classList.add('incorrect');
         }
       });
 
-      const percentScore = (score / quizData.length) * 100;
-      document.getElementById('progress').style.width = `${percentScore}%`;
-      document.getElementById('progress-text').textContent = `Score: ${score} / ${quizData.length}`;
+      if (selectedValue === q.choices[q.answer]) {
+        feedback.textContent = 'Correct!';
+        feedback.style.color = 'green';
+      } else {
+        feedback.textContent = `Incorrect. Correct answer: ${q.choices[q.answer]}`;
+        feedback.style.color = 'red';
+      }
 
-      const summary = document.getElementById('score-summary');
-      summary.innerHTML = `<strong>Your Score: ${score} / ${quizData.length}</strong>`;
-    });
+      updateProgress();
+    }
   </script>
 </body>
 </html>
