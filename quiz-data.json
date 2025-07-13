@@ -1,0 +1,2605 @@
+{
+  "title": "D076 Glossary Fill-in-the-Blank Exam",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The system of recording, reporting, and summarizing past financial information and transactions.",
+      "choices": [
+        "Risk Retention",
+        "Pension Fund",
+        "Accounting",
+        "Bondholders"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Accounting'."
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An activity ratio found by credit sales divided by accounts receivable.",
+      "choices": [
+        "Accounts Receivable Turnover (AR Turnover)",
+        "Fisher Effect",
+        "Capital Budgeting",
+        "Venture Capitalists (VCs)"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Accounts Receivable Turnover (AR Turnover)'."
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A category of ratios that measure how well a company uses its assets to generate sales or cash, showing the firm\u2019s operational efficiency and profitability.",
+      "choices": [
+        "Firm-specific Risk",
+        "Activity Ratios",
+        "Bid-ask Spread",
+        "Compounding"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Activity Ratios'."
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Another name for the discretionary financing needed or external financing needed. It represents the additional financing needed given a firm\u2019s expectations for future growth.",
+      "choices": [
+        "Additional Funds Needed (AFN)",
+        "Spontaneous Accounts",
+        "Compounding Interest",
+        "Debt Ratio"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Additional Funds Needed (AFN)'."
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A bond covenant that describes things the company pledges itself to do in order to protect bondholders.",
+      "choices": [
+        "Capital Asset Pricing Model (CAPM)",
+        "Harvest",
+        "Affirmative Covenants",
+        "Revenues"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Affirmative Covenants'."
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Costs that are incurred when management does not act in the best interest of shareholders.",
+      "choices": [
+        "Agency Costs",
+        "Investment Bank",
+        "Mutual Fund",
+        "Risk Premium"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Agency Costs'."
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - When the agent (the management) does not act in the best interest of the principal (the owners).",
+      "choices": [
+        "Bid-ask Spread",
+        "Agency Problem",
+        "Specialist",
+        "Market Ratios"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Agency Problem'."
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Companies or securities with beta greater than 1.",
+      "choices": [
+        "Agency Costs",
+        "Accounting",
+        "Inventory Turnover",
+        "Aggressive Assets"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Aggressive Assets'."
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The annual interest rate that is charged for borrowing money or that is earned through investment.",
+      "choices": [
+        "Annual Percentage Rate",
+        "Corporate Governance",
+        "Liquidity",
+        "Revenues"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Annual Percentage Rate'."
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A stream of cash flows of an equal amount paid every consecutive period.",
+      "choices": [
+        "Pro Forma Statements",
+        "Annuity",
+        "Perpetuity",
+        "Seasonal Firms"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Annuity'."
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A series of equal payments made at the beginning of consecutive periods.",
+      "choices": [
+        "Annuity Due",
+        "Average Collection Period (ACP)",
+        "Trend Analysis",
+        "Pro Forma Statements"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Annuity Due'."
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The process of valuing assets.",
+      "choices": [
+        "Central Banks",
+        "Asset Pricing",
+        "Discounting",
+        "Systematic Risk"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Asset Pricing'."
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A secondary market with a physical location and where prices are determined by investors\u2019 willingness to pay.",
+      "choices": [
+        "Auction Market",
+        "Gross Margin",
+        "Discretionary Accounts",
+        "Present Value"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Auction Market'."
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An activity ratio found by the number of days in a year (365) divided by AR turnover.",
+      "choices": [
+        "Par Value",
+        "Nondiversifiable Risk",
+        "Average Collection Period (ACP)",
+        "Initial Public Offering (IPO)"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Average Collection Period (ACP)'."
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Using sales growth and the profit forecast to construct a pro forma balance sheet to understand the future implications of the sources and uses of finances.",
+      "choices": [
+        "Morals",
+        "Risk Separation",
+        "Capital Asset Pricing Model (CAPM)",
+        "Balance Sheet Forecasting"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Balance Sheet Forecasting'."
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Receive deposits and extend loans to individuals and businesses.",
+      "choices": [
+        "Fixed Expenditures",
+        "Banks and Credit Unions",
+        "Internal Rate of Return (IRR)",
+        "Personal Bankers"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Banks and Credit Unions'."
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The process of completing a financial analysis to compare a firm\u2019s financial performance to that of other similar firms.",
+      "choices": [
+        "Capital Budgeting",
+        "Bid-ask Spread",
+        "Benchmarking",
+        "Diversification"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Benchmarking'."
+    },
+    {
+      "id": 18,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A variable that describes how the price of a security varies with the market.",
+      "choices": [
+        "Present Value",
+        "Trusts",
+        "Beta",
+        "Revenues"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Beta'."
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The difference between the bid and ask prices that compensate the specialist for the risk that he or she bears for willingness to provide liquidity.",
+      "choices": [
+        "Fixed-income Securities",
+        "Accounting",
+        "Risk Transfer",
+        "Bid-ask Spread"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Bid-ask Spread'."
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A group of people who jointly supervise the activities of an organization.",
+      "choices": [
+        "Pension Fund",
+        "Board of Directors",
+        "Times Interest Earned (TIE)",
+        "Payout Ratio"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Board of Directors'."
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A legal contract that governs the relationship between a firm and its bondholders.",
+      "choices": [
+        "Covenants",
+        "Specialist",
+        "Financial Policy Implementation",
+        "Bond Indenture"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Bond Indenture'."
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A person who loans a corporation money by buying debt securities.",
+      "choices": [
+        "Bondholders",
+        "Aggressive Assets",
+        "Dividends in Arrears",
+        "Capital Budgeting Criteria"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Bondholders'."
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An area of finance that deals with sources of funding, the capital structure of corporations, the actions that managers take to increase the value of the firm to its owners, and the tools and analysis used to allocate financial resources.",
+      "choices": [
+        "Investments",
+        "Dividend Discount Model",
+        "Business Finance",
+        "Face Value"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Business Finance'."
+    },
+    {
+      "id": 24,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The reduction in sales of a company\u2019s own products due to introduction of another similar product.",
+      "choices": [
+        "Risk Transfer",
+        "Inventory Turnover",
+        "Securitization",
+        "Cannibalization"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Cannibalization'."
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A financial asset that can be used by a firm or individual. Examples of capital may be machinery or cash held by a firm.",
+      "choices": [
+        "Debt-to-equity Ratio",
+        "Annuity Due",
+        "Discretionary Accounts",
+        "Capital"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Capital'."
+    },
+    {
+      "id": 26,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A model used to determine the risk-return relationship for an asset.",
+      "choices": [
+        "Operating Margin",
+        "Utility",
+        "Capital Asset Pricing Model (CAPM)",
+        "Default"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Capital Asset Pricing Model (CAPM)'."
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The process of evaluation and planning for purchases of long-term assets.",
+      "choices": [
+        "Capital Budgeting",
+        "Liquidity Ratios",
+        "Steady State Growth",
+        "Time Value of Money (TVM)"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Capital Budgeting'."
+    },
+    {
+      "id": 28,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Metrics and calculations used to determine whether a project or asset will add value and be a worthwhile investment.",
+      "choices": [
+        "Times Interest Earned (TIE)",
+        "Capital Budgeting Criteria",
+        "Capital Asset Pricing Model (CAPM)",
+        "DuPont Framework"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Capital Budgeting Criteria'."
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The sum of money invested in a business to purchase long-term assets to further its objective of maximizing owner wealth.",
+      "choices": [
+        "Teller",
+        "Discount Bond",
+        "Capital Investment",
+        "Capital Budgeting Criteria"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Capital Investment'."
+    },
+    {
+      "id": 30,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A type of financial market used for long-term assets that are held for greater than one year.",
+      "choices": [
+        "Capital Markets",
+        "Operating Margin",
+        "Risk",
+        "Cost of Capital"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Capital Markets'."
+    },
+    {
+      "id": 31,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The mixture of debt and equity used to finance a firm.",
+      "choices": [
+        "Capital Structure",
+        "Fixed Asset Turnover (FAT)",
+        "Seasonal Firms",
+        "Sustainable Growth Rate (SGR)"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Capital Structure'."
+    },
+    {
+      "id": 32,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - When a limited amount of funds are available.",
+      "choices": [
+        "Publicly Traded Firms",
+        "Dividends in Arrears",
+        "Treasury Bill",
+        "Capital-constrained Environment"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Capital-constrained Environment'."
+    },
+    {
+      "id": 33,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A plan for controlling cash inflows and outflows business to balance income with expenditures.",
+      "choices": [
+        "Capital Budgeting Criteria",
+        "Stock",
+        "Primary Market",
+        "Cash Budgets"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Cash Budgets'."
+    },
+    {
+      "id": 34,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Managing the day-to-day finance operations of a firm.",
+      "choices": [
+        "Payout Ratio",
+        "Board of Directors",
+        "Asset Pricing",
+        "Cash Management"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Cash Management'."
+    },
+    {
+      "id": 35,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Ensure that a nation\u2019s economy remains healthy by controlling the amount of money circulating in the economy.",
+      "choices": [
+        "Balance Sheet Forecasting",
+        "Dividend Discount Model",
+        "Bid-ask Spread",
+        "Central Banks"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Central Banks'."
+    },
+    {
+      "id": 36,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A type of stock that represents equity in a firm and confers the right to vote at shareholder meetings.",
+      "choices": [
+        "Return",
+        "Real Rate",
+        "Common Stock",
+        "Risk"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Common Stock'."
+    },
+    {
+      "id": 37,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Finding a future value given a present value.",
+      "choices": [
+        "Venture Capitalists (VCs)",
+        "Compounding",
+        "Financial Policy Implementation",
+        "Return On Equity (ROE)"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Compounding'."
+    },
+    {
+      "id": 38,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The interest on the principal plus the interest on earned interest.",
+      "choices": [
+        "Capital Asset Pricing Model (CAPM)",
+        "Compounding Interest",
+        "Steady State Growth",
+        "Research and Development"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Compounding Interest'."
+    },
+    {
+      "id": 39,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A debt instrument that is issued by a corporation in order to raise capital.",
+      "choices": [
+        "Ethical Dilemma",
+        "Corporate Bonds",
+        "Leverage Ratios",
+        "Sunk Costs"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Corporate Bonds'."
+    },
+    {
+      "id": 40,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The system of rules, practices, and processes by which a firm is directed and controlled.",
+      "choices": [
+        "Yield to Maturity (YTM)",
+        "Default",
+        "Fixed Asset Turnover (FAT)",
+        "Corporate Governance"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Corporate Governance'."
+    },
+    {
+      "id": 41,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The measure of the relationship between two variables that move in relation to each other.",
+      "choices": [
+        "Correlation",
+        "Coupon Rate",
+        "Preferred Stock",
+        "Maturity Date"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Correlation'."
+    },
+    {
+      "id": 42,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The cost to a firm to use an investor\u2019s capital; see interest rate.",
+      "choices": [
+        "Risk Avoidance",
+        "Cost of Capital",
+        "Securitization",
+        "Initial Public Offering (IPO)"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Cost of Capital'."
+    },
+    {
+      "id": 43,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The stated interest rate of a bond; also known as coupon yield.",
+      "choices": [
+        "Present Value",
+        "Total Asset Turnover (TAT)",
+        "Utility",
+        "Coupon Rate"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Coupon Rate'."
+    },
+    {
+      "id": 44,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The stated interest rate of a bond; also known as coupon rate.",
+      "choices": [
+        "Coupon Yield",
+        "Preferred Stock",
+        "Par Value",
+        "Money Market"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Coupon Yield'."
+    },
+    {
+      "id": 45,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Statements in a bond indenture that outline things the company will obligate itself to do or not do in order to protect bondholders.",
+      "choices": [
+        "Covenants",
+        "Treasury Note",
+        "Leverage Ratios",
+        "U.S Securities and Exchange Commission (SEC)"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Covenants'."
+    },
+    {
+      "id": 46,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A commercial bank position with the responsibility to assess the riskiness of lending to borrowers and determining whether or not loans should be extended to potential bank clients.",
+      "choices": [
+        "Nonsystematic Risk",
+        "Plowback Ratio",
+        "Credit Analysts",
+        "Teller"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Credit Analysts'."
+    },
+    {
+      "id": 47,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Comparing a firm\u2019s financial ratios to other firms\u2019 ratios or industry averages.",
+      "choices": [
+        "Standard Deviation",
+        "Cross-sectional Analysis",
+        "Discretionary Financing Needed (DFN)",
+        "Time Value of Money (TVM)"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Cross-sectional Analysis'."
+    },
+    {
+      "id": 48,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A feature of preferred stock specifying that if a company skips payment of a preferred stock dividend one year, it is still required to pay that dividend sometime in the future before paying any common dividends.",
+      "choices": [
+        "Mutual Fund",
+        "Cumulative",
+        "Estates",
+        "Systematic Risk"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Cumulative'."
+    },
+    {
+      "id": 49,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - What someone would pay right now for an asset.",
+      "choices": [
+        "Current Market Value",
+        "Risk Transfer",
+        "Market Capitalization",
+        "Internal Rate of Return (IRR)"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Current Market Value'."
+    },
+    {
+      "id": 50,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A liquidity ratio found by current assets divided by current liabilities.",
+      "choices": [
+        "Current Ratio",
+        "Corporate Bonds",
+        "Credit Analysts",
+        "Negative Covenants"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Current Ratio'."
+    },
+    {
+      "id": 51,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A secondary market made up of multiple dealers that hold an inventory of securities and quote prices.",
+      "choices": [
+        "Dealer Market",
+        "Par Bond",
+        "Beta",
+        "Profit Forecasting"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Dealer Market'."
+    },
+    {
+      "id": 52,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A financing ratio found by total liabilities divided by total assets.",
+      "choices": [
+        "Debt Ratio",
+        "Insurance Companies",
+        "Return On Assets (ROA)",
+        "Risk Premium"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Debt Ratio'."
+    },
+    {
+      "id": 53,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A financing ratios found by total liabilities divided by total equity.",
+      "choices": [
+        "Simple Interest",
+        "Debt-to-equity Ratio",
+        "Retention Ratio",
+        "Gordon Growth Model"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Debt-to-equity Ratio'."
+    },
+    {
+      "id": 54,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Failure to meet a debt obligation.",
+      "choices": [
+        "Risk Retention",
+        "Liquidity",
+        "Default",
+        "Cash Management"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Default'."
+    },
+    {
+      "id": 55,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The probability of a loss resulting from a borrower\u2019s failure to repay a contractual obligation; also called credit risk.",
+      "choices": [
+        "Trusts",
+        "Financial Institutions",
+        "Default Risk",
+        "Primary Market"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Default Risk'."
+    },
+    {
+      "id": 56,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Companies or securities with beta less than 1.",
+      "choices": [
+        "Nonsystematic Risk",
+        "Accounts Receivable Turnover (AR Turnover)",
+        "Bid-ask Spread",
+        "Defensive Assets"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Defensive Assets'."
+    },
+    {
+      "id": 57,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A bond whose price is below its par value.",
+      "choices": [
+        "Discount Bond",
+        "Accounts Receivable Turnover (AR Turnover)",
+        "Research and Development",
+        "Pro Forma Statements"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Discount Bond'."
+    },
+    {
+      "id": 58,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The name for interest rate when used in time value of money calculations.",
+      "choices": [
+        "Pro Forma Statements",
+        "Discount Rate",
+        "Sunk Costs",
+        "Agency Costs"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Discount Rate'."
+    },
+    {
+      "id": 59,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Finding a present value given a future value.",
+      "choices": [
+        "Capital Investment",
+        "Utility",
+        "Treasury Note",
+        "Discounting"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Discounting'."
+    },
+    {
+      "id": 60,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Accounts that do not vary automatically with sales but are left to the discretion of management.",
+      "choices": [
+        "Debt-to-equity Ratio",
+        "Systematic Risk",
+        "Operating Income Return On Investment (OIROI)",
+        "Discretionary Accounts"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Discretionary Accounts'."
+    },
+    {
+      "id": 61,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The additional financing needed given a firm\u2019s expectations for future growth.",
+      "choices": [
+        "Accounting",
+        "Financial Risk",
+        "Discretionary Financing Needed (DFN)",
+        "Capital-constrained Environment"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Discretionary Financing Needed (DFN)'."
+    },
+    {
+      "id": 62,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The process of \u201cspreading\u201d your money over many different assets.",
+      "choices": [
+        "Personal Bankers",
+        "Efficient market",
+        "Estates",
+        "Diversification"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Diversification'."
+    },
+    {
+      "id": 63,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A model used to evaluate common stock that calculates the value of a share of common stock today by taking the present value of future dividend cash flows.",
+      "choices": [
+        "Firm-specific Risk",
+        "Dividend Discount Model",
+        "Efficient market",
+        "NASDAQ"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Dividend Discount Model'."
+    },
+    {
+      "id": 64,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A feature of preferred stock specifying that if a company ignores preferred stock dividends, it cannot pay anything to its common stockholders.",
+      "choices": [
+        "Cross-sectional Analysis",
+        "Publicly Traded Firms",
+        "Capital Budgeting",
+        "Dividends in Arrears"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Dividends in Arrears'."
+    },
+    {
+      "id": 65,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An expanded formula of the return of equity, net margin times total asset turnover times leverage multiplier, which represent the components of profitability, activity (efficiency), and financing.",
+      "choices": [
+        "Future Value",
+        "DuPont Framework",
+        "Money Market",
+        "Default"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'DuPont Framework'."
+    },
+    {
+      "id": 66,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A market in which prices fully reflect all the available information about a specific security.",
+      "choices": [
+        "Profit Forecasting",
+        "Efficient market",
+        "Ordinary Annuity",
+        "Average Collection Period (ACP)"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Efficient market'."
+    },
+    {
+      "id": 67,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Everything that a person owns or controls, especially at death.",
+      "choices": [
+        "Return On Equity (ROE)",
+        "Estates",
+        "Mutually Exclusive",
+        "Utility"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Estates'."
+    },
+    {
+      "id": 68,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An issue in the process of deciding between multiple options where no option is completely acceptable from an ethical standpoint.",
+      "choices": [
+        "Coupon Yield",
+        "Personal Bankers",
+        "Ethical Dilemma",
+        "Return"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Ethical Dilemma'."
+    },
+    {
+      "id": 69,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Following accepted standards of moral conduct.",
+      "choices": [
+        "Ethics",
+        "Total Asset Turnover (TAT)",
+        "Utility",
+        "Present Value"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Ethics'."
+    },
+    {
+      "id": 70,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A hypothesized estimate of future prices or returns under different scenarios based on expectational data.",
+      "choices": [
+        "Market Risk",
+        "Negative Covenants",
+        "Estates",
+        "Expected Return"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Expected Return'."
+    },
+    {
+      "id": 71,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Another name for the discretionary financing needed or additional funds needed. It represents the additional financing needed given a firm\u2019s expectations for future growth.",
+      "choices": [
+        "Discounting",
+        "Securitization",
+        "Spontaneous Accounts",
+        "External Financing Needed (EFN)"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'External Financing Needed (EFN)'."
+    },
+    {
+      "id": 72,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The sum of money that a corporation promises to pay at the expiration of a bond; also called par value.",
+      "choices": [
+        "Standard Deviation",
+        "Treasury Note",
+        "Face Value",
+        "Leverage Ratios"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Face Value'."
+    },
+    {
+      "id": 73,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The study of managing and allocating funds at the personal or business level.",
+      "choices": [
+        "Beta",
+        "Maturity Date",
+        "Finance",
+        "Future Value"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Finance'."
+    },
+    {
+      "id": 74,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An area of finance that includes firms or organizations that exist to accept a wide variety of deposits, to offer investment products to individuals and businesses, to provide loans, or to broker financial transactions.",
+      "choices": [
+        "Shareholders",
+        "Specialist",
+        "Risk Retention",
+        "Financial Institutions"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Financial Institutions'."
+    },
+    {
+      "id": 75,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A person who makes strategic financial decisions in a corporation.",
+      "choices": [
+        "Liquid Asset",
+        "Bondholders",
+        "Financial Managers",
+        "Capital Budgeting Criteria"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Financial Managers'."
+    },
+    {
+      "id": 76,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Incorporating new finance ideas within a firm.",
+      "choices": [
+        "Fixed-income Securities",
+        "Cannibalization",
+        "Financial Policy Implementation",
+        "Net Margin"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Financial Policy Implementation'."
+    },
+    {
+      "id": 77,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Increased volatility in earnings as a result of using debt.",
+      "choices": [
+        "U.S Securities and Exchange Commission (SEC)",
+        "Risk Reduction",
+        "Price-to-earnings Ratio (P/E Ratio)",
+        "Financial Risk"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Financial Risk'."
+    },
+    {
+      "id": 78,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Risk that results from factors at a particular firm and can be reduced through diversification; also called nonsystematic risk or idiosyncratic risk.",
+      "choices": [
+        "Firm-specific Risk",
+        "Simple Interest",
+        "Risk",
+        "Corporate Bonds"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Firm-specific Risk'."
+    },
+    {
+      "id": 79,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An economic theory developed by Irving Fisher holding that the real interest rate is equivalent to the nominal interest rate minus the expected inflation rate.",
+      "choices": [
+        "Fisher Effect",
+        "Market Risk",
+        "Expected Return",
+        "Banks and Credit Unions"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Fisher Effect'."
+    },
+    {
+      "id": 80,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An activity ratio found by sales divided by fixed assets.",
+      "choices": [
+        "Fixed Asset Turnover (FAT)",
+        "Bid-ask Spread",
+        "Treasury Securities",
+        "Board of Directors"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Fixed Asset Turnover (FAT)'."
+    },
+    {
+      "id": 81,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An expense that you do not have direct control over and that remains constant from period to period.",
+      "choices": [
+        "Trend Analysis",
+        "Fixed Expenditures",
+        "New York Stock Exchange (NYSE)",
+        "Bond Indenture"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Fixed Expenditures'."
+    },
+    {
+      "id": 82,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Another name for bonds; a financial security in which the borrower pays a fixed interest payment to investors each year.",
+      "choices": [
+        "Mutual Fund",
+        "Beta",
+        "Fixed-income Securities",
+        "Bondholders"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Fixed-income Securities'."
+    },
+    {
+      "id": 83,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The worth of cash flows in terms of the dollar amount in the relative future.",
+      "choices": [
+        "Future Value",
+        "Market Capitalization",
+        "Risk Separation",
+        "Expected Return"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Future Value'."
+    },
+    {
+      "id": 84,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A formula used to value common stock based on the assumptions that dividends are paid every year and grow at constant rate forever.",
+      "choices": [
+        "Profit Forecasting",
+        "Net Margin",
+        "Gordon Growth Model",
+        "Fixed Asset Turnover (FAT)"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Gordon Growth Model'."
+    },
+    {
+      "id": 85,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A profitability ratio found by gross profit divided by sales.",
+      "choices": [
+        "Coupon Rate",
+        "Tax Strategies",
+        "Accounting",
+        "Gross Margin"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Gross Margin'."
+    },
+    {
+      "id": 86,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Generating cash or stock from the sales or IPO of companies in the portfolio of investments.",
+      "choices": [
+        "Privately Held Companies",
+        "Credit Analysts",
+        "Sustainable Growth Rate (SGR)",
+        "Harvest"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Harvest'."
+    },
+    {
+      "id": 87,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The return over the entire period that an investor owns a financial security.",
+      "choices": [
+        "Aggressive Assets",
+        "Holding Period Return",
+        "Trend Analysis",
+        "Real Rate"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Holding Period Return'."
+    },
+    {
+      "id": 88,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The required rate of return that a company expects to earn in order to consider a project.",
+      "choices": [
+        "Stock",
+        "Capital Asset Pricing Model (CAPM)",
+        "Hurdle Rate",
+        "Cash Management"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Hurdle Rate'."
+    },
+    {
+      "id": 89,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A security that has some elements that resemble equity and others that resemble debt.",
+      "choices": [
+        "Capital Structure",
+        "Hybrid Security",
+        "Return On Equity (ROE)",
+        "Intrinsic Value"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Hybrid Security'."
+    },
+    {
+      "id": 90,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Risk that results from factors at a particular firm and can be reduced through diversification; also called firm-specific risk or nonsystematic risk.",
+      "choices": [
+        "Idiosyncratic Risk",
+        "Pension Fund",
+        "Net Margin",
+        "Times Interest Earned (TIE)"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Idiosyncratic Risk'."
+    },
+    {
+      "id": 91,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Cash flows that result from accepting a project.",
+      "choices": [
+        "Incremental Cash Flows",
+        "Hurdle Rate",
+        "Defensive Assets",
+        "Capital Budgeting"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Incremental Cash Flows'."
+    },
+    {
+      "id": 92,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The rate at which the average price level of a basket of chosen goods and services in an economy increases over a period of time.",
+      "choices": [
+        "Market-to-book Ratio (M/B Ratio)",
+        "Cash Management",
+        "Inflation",
+        "Efficient market"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Inflation'."
+    },
+    {
+      "id": 93,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - When a privately held company first offers shares of stock to outside investors to raise capital, therefore becoming a publicly owned company.",
+      "choices": [
+        "Current Ratio",
+        "Benchmarking",
+        "Leverage",
+        "Initial Public Offering (IPO)"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Initial Public Offering (IPO)'."
+    },
+    {
+      "id": 94,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Charge premiums to invest in bonds and stocks to pay claims.",
+      "choices": [
+        "Debt-to-equity Ratio",
+        "Risk Retention",
+        "Insurance Companies",
+        "Benchmarking"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Insurance Companies'."
+    },
+    {
+      "id": 95,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The percentage of the principal that a lender charges a borrower for the use of assets.",
+      "choices": [
+        "Annual Percentage Rate",
+        "Interest Rate",
+        "Current Ratio",
+        "Fixed-income Securities"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Interest Rate'."
+    },
+    {
+      "id": 96,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The probability that changes in interest rates will impact the value of a bond.",
+      "choices": [
+        "Balance Sheet Forecasting",
+        "Interest Rate Risk",
+        "Inventory Turnover",
+        "Morals"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Interest Rate Risk'."
+    },
+    {
+      "id": 97,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The rate of return that a firm earns on its capital projects.",
+      "choices": [
+        "Interest Rate Risk",
+        "Covenants",
+        "Internal Rate of Return (IRR)",
+        "Seasonal Firms"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Internal Rate of Return (IRR)'."
+    },
+    {
+      "id": 98,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The value of an asset as determined through fundamental analysis without referring to the asset\u2019s market value.",
+      "choices": [
+        "Intrinsic Value",
+        "Risk Reduction",
+        "Par Bond",
+        "Negative Covenants"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Intrinsic Value'."
+    },
+    {
+      "id": 99,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An activity ratio found by COGS divided by inventory.",
+      "choices": [
+        "Board of Directors",
+        "Inventory Turnover",
+        "Treasury Bill",
+        "Legal"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Inventory Turnover'."
+    },
+    {
+      "id": 100,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A financial intermediary that offers complex financial transactions such as underwriting, facilitating mergers, and buying and selling financial securities on behalf of large institutions.",
+      "choices": [
+        "Incremental Cash Flows",
+        "Investment Bank",
+        "Private Equity",
+        "Venture Capitalists (VCs)"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Investment Bank'."
+    },
+    {
+      "id": 101,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An area of finance that involves deciding which assets to invest in to create wealth in the future.",
+      "choices": [
+        "NASDAQ",
+        "Nondiversifiable Risk",
+        "Investments",
+        "Upside Potential"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Investments'."
+    },
+    {
+      "id": 102,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Following the laws and rules set by an authority.",
+      "choices": [
+        "New York Stock Exchange (NYSE)",
+        "Legal",
+        "Current Market Value",
+        "Maturity Date"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Legal'."
+    },
+    {
+      "id": 103,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Another name for debt or liability.",
+      "choices": [
+        "Sustainable Growth Rate (SGR)",
+        "Private Equity",
+        "Leverage",
+        "Defensive Assets"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Leverage'."
+    },
+    {
+      "id": 104,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A category of ratios that consider how a firm is financed.",
+      "choices": [
+        "Leverage Ratios",
+        "Corporate Governance",
+        "Harvest",
+        "Capital"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Leverage Ratios'."
+    },
+    {
+      "id": 105,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An asset that can be converted into cash quickly without the loss of significant value.",
+      "choices": [
+        "Liquid Asset",
+        "Annuity Due",
+        "Additional Funds Needed (AFN)",
+        "Current Ratio"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Liquid Asset'."
+    },
+    {
+      "id": 106,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The ability to turn financial securities into cash easily without losing significant value.",
+      "choices": [
+        "Treasury Note",
+        "Liquidity",
+        "Capital Structure",
+        "Estates"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Liquidity'."
+    },
+    {
+      "id": 107,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A category of ratios that measure a firm\u2019s ability to meet short-term obligations.",
+      "choices": [
+        "Premium Bond",
+        "Liquidity Ratios",
+        "Nondiversifiable Risk",
+        "Debt Ratio"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Liquidity Ratios'."
+    },
+    {
+      "id": 108,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The current market value of a publicly traded company\u2019s total outstanding shares, indicating the size of a company.",
+      "choices": [
+        "Profitability Index (PI)",
+        "Dealer Market",
+        "Market Capitalization",
+        "Capital Structure"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Market Capitalization'."
+    },
+    {
+      "id": 109,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A category of ratios that are used to evaluate the current share price of a public firm\u2019s stock.",
+      "choices": [
+        "Aggressive Assets",
+        "Par Value",
+        "Market Ratios",
+        "Compounding Interest"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Market Ratios'."
+    },
+    {
+      "id": 110,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Risk that is inherent in the economy as a whole and cannot be diversified away; also called systematic risk or nondiversifiable risk.",
+      "choices": [
+        "Market Risk",
+        "Risk Separation",
+        "Liquid Asset",
+        "Future Value"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Market Risk'."
+    },
+    {
+      "id": 111,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A market ratio found by market value of equity divided by book value of equity.",
+      "choices": [
+        "Correlation",
+        "Ethical Dilemma",
+        "Insurance Companies",
+        "Market-to-book Ratio (M/B Ratio)"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Market-to-book Ratio (M/B Ratio)'."
+    },
+    {
+      "id": 112,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The business function responsible for generating sales.",
+      "choices": [
+        "Marketing",
+        "Risk",
+        "Annuity",
+        "Dividends in Arrears"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Marketing'."
+    },
+    {
+      "id": 113,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The date at which a bond expires.",
+      "choices": [
+        "Fixed Expenditures",
+        "Maturity Date",
+        "Treasury Note",
+        "Sunk Costs"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Maturity Date'."
+    },
+    {
+      "id": 114,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A type of financial market used for short-term assets that are held for less than one year.",
+      "choices": [
+        "Money Market",
+        "Market-to-book Ratio (M/B Ratio)",
+        "Fixed Asset Turnover (FAT)",
+        "Capital-constrained Environment"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Money Market'."
+    },
+    {
+      "id": 115,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Following one\u2019s standards of right and wrong behavior.",
+      "choices": [
+        "Capital-constrained Environment",
+        "Morals",
+        "Treasury Bill",
+        "Financial Risk"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Morals'."
+    },
+    {
+      "id": 116,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An investment company that continually offers investments and buys financial securities and instruments on behalf of investors.",
+      "choices": [
+        "Mutual Fund",
+        "Gross Margin",
+        "Business Finance",
+        "Simple Interest"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Mutual Fund'."
+    },
+    {
+      "id": 117,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - When two or more events do not coincide.",
+      "choices": [
+        "Liquid Asset",
+        "Defensive Assets",
+        "Mutually Exclusive",
+        "Financial Managers"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Mutually Exclusive'."
+    },
+    {
+      "id": 118,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A computer network where stocks are bought and sold. It is the second-largest stock exchange in the world. Typically, technology-related companies will go public through this exchange.",
+      "choices": [
+        "Ethical Dilemma",
+        "NASDAQ",
+        "Trend Analysis",
+        "Capital Budgeting"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'NASDAQ'."
+    },
+    {
+      "id": 119,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A bond covenant that describes things the company pledges itself not to do in order to protect bondholders.",
+      "choices": [
+        "Interest Rate",
+        "Negative Covenants",
+        "Personal Bankers",
+        "Pension Fund"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Negative Covenants'."
+    },
+    {
+      "id": 120,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The percentage of sales remaining after all costs have been deducted from a company's total sales. Also known as net profit margin; indicates the profit earned by the firm.",
+      "choices": [
+        "Net Margin",
+        "Credit Analysts",
+        "Private Equity",
+        "Par Value"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Net Margin'."
+    },
+    {
+      "id": 121,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A physical trading floor and a computer network where stocks are bought and sold. It is the largest stock exchange in the world.",
+      "choices": [
+        "Default",
+        "Annual Percentage Rate",
+        "New York Stock Exchange (NYSE)",
+        "Sales"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'New York Stock Exchange (NYSE)'."
+    },
+    {
+      "id": 122,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The rate at which invested money grows for a certain period of time.",
+      "choices": [
+        "Syndicate",
+        "Insurance Companies",
+        "Nominal Rate",
+        "Marketing"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Nominal Rate'."
+    },
+    {
+      "id": 123,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Risk that is inherent in the economy as a whole and cannot be diversified away; also called market risk or systematic risk.",
+      "choices": [
+        "Risk Separation",
+        "Return",
+        "Nondiversifiable Risk",
+        "Privately Held Companies"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Nondiversifiable Risk'."
+    },
+    {
+      "id": 124,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Risk that results from factors at a particular firm and can be reduced through diversification; also called firm-specific risk or idiosyncratic risk.",
+      "choices": [
+        "Nonsystematic Risk",
+        "Stock",
+        "Treasury Bill",
+        "Negative Covenants"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Nonsystematic Risk'."
+    },
+    {
+      "id": 125,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An activity ratio found by operating income divided by total assets.",
+      "choices": [
+        "U.S Securities and Exchange Commission (SEC)",
+        "Operating Income Return On Investment (OIROI)",
+        "Tax Strategies",
+        "Primary Market"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Operating Income Return On Investment (OIROI)'."
+    },
+    {
+      "id": 126,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A profitability ratio found by EBIT profit divided by sales.",
+      "choices": [
+        "Affirmative Covenants",
+        "Ethical Dilemma",
+        "Operating Margin",
+        "Capital Budgeting"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Operating Margin'."
+    },
+    {
+      "id": 127,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The loss of potential gain from other alternatives when one alternative is chosen.",
+      "choices": [
+        "Coupon Yield",
+        "Opportunity Cost",
+        "Discount Rate",
+        "Covenants"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Opportunity Cost'."
+    },
+    {
+      "id": 128,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A series of equal payments made at the end of consecutive periods over a fixed length of time.",
+      "choices": [
+        "Securitization",
+        "Yield to Maturity (YTM)",
+        "Ordinary Annuity",
+        "Gordon Growth Model"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Ordinary Annuity'."
+    },
+    {
+      "id": 129,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A bond whose price is exactly equal to its par value.",
+      "choices": [
+        "Par Bond",
+        "Mutually Exclusive",
+        "Personal Bankers",
+        "Liquid Asset"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Par Bond'."
+    },
+    {
+      "id": 130,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The sum of money that a corporation promises to pay at the expiration of a bond; also called face value.",
+      "choices": [
+        "Par Value",
+        "Accounts Receivable Turnover (AR Turnover)",
+        "Plowback Ratio",
+        "Net Margin"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Par Value'."
+    },
+    {
+      "id": 131,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The percent of net income distributed to the shareholders.",
+      "choices": [
+        "Accounting",
+        "Payout Ratio",
+        "Activity Ratios",
+        "Tax Strategies"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Payout Ratio'."
+    },
+    {
+      "id": 132,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A financial institution that specializes in managing and administering retirement funds.",
+      "choices": [
+        "Corporate Bonds",
+        "Initial Public Offering (IPO)",
+        "Diversification",
+        "Pension Fund"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Pension Fund'."
+    },
+    {
+      "id": 133,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A constant stream of identical cash flows that continues forever.",
+      "choices": [
+        "Fisher Effect",
+        "Perpetuity",
+        "Board of Directors",
+        "Balance Sheet Forecasting"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Perpetuity'."
+    },
+    {
+      "id": 134,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A formula used to value preferred stock that is based on the calculation of a perpetuity.",
+      "choices": [
+        "Benchmarking",
+        "Perpetuity Model",
+        "Wills",
+        "Accounting"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Perpetuity Model'."
+    },
+    {
+      "id": 135,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A commercial bank position with the responsibility to find and attract new clients.",
+      "choices": [
+        "Personal Bankers",
+        "Accounts Receivable Turnover (AR Turnover)",
+        "Gordon Growth Model",
+        "Capital Budgeting Criteria"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Personal Bankers'."
+    },
+    {
+      "id": 136,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The percent of net income retained in the firm; also called the retention ratio.",
+      "choices": [
+        "Investment Bank",
+        "Plowback Ratio",
+        "Coupon Yield",
+        "Diversification"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Plowback Ratio'."
+    },
+    {
+      "id": 137,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A hybrid security that has no fixed maturity, has fixed payments, and does not confer voting rights on bondholders.",
+      "choices": [
+        "Discount Rate",
+        "Price Risk",
+        "Preferred Stock",
+        "Simple Interest"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Preferred Stock'."
+    },
+    {
+      "id": 138,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A bond whose price is above its par value.",
+      "choices": [
+        "Stakeholder",
+        "Default",
+        "Premium Bond",
+        "Marketing"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Premium Bond'."
+    },
+    {
+      "id": 139,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The worth of cash flows in terms of the dollar amount in the relative past.",
+      "choices": [
+        "Present Value",
+        "Current Market Value",
+        "Times Interest Earned (TIE)",
+        "Cash Budgets"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Present Value'."
+    },
+    {
+      "id": 140,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The potential for the decline in the price of a financial security or an asset relative to the market.",
+      "choices": [
+        "Par Bond",
+        "Return On Assets (ROA)",
+        "Risk Transfer",
+        "Price Risk"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Price Risk'."
+    },
+    {
+      "id": 141,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A market ratio found by price per share divided by earnings per share.",
+      "choices": [
+        "Price-to-earnings Ratio (P/E Ratio)",
+        "Affirmative Covenants",
+        "Discretionary Accounts",
+        "Nonsystematic Risk"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Price-to-earnings Ratio (P/E Ratio)'."
+    },
+    {
+      "id": 142,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The financial market where securities (stocks and/or bonds) are first sold.",
+      "choices": [
+        "Pro Forma Statements",
+        "Current Ratio",
+        "Capital Investment",
+        "Primary Market"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Primary Market'."
+    },
+    {
+      "id": 143,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A financial institution that invests in an entity that is not publicly listed or traded using money received from institutional investors and wealthy individuals.",
+      "choices": [
+        "Default",
+        "Private Equity",
+        "Estates",
+        "Correlation"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Private Equity'."
+    },
+    {
+      "id": 144,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Firms that have not issued shares to the public where the ownership rights are privately held.",
+      "choices": [
+        "Privately Held Companies",
+        "Sunk Costs",
+        "Par Value",
+        "Capital Structure"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Privately Held Companies'."
+    },
+    {
+      "id": 145,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A financial statement that projects an estimate for future periods \u201cas if\u201d sales grew as predicted.",
+      "choices": [
+        "Mutually Exclusive",
+        "Auction Market",
+        "Dealer Market",
+        "Pro Forma Statements"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Pro Forma Statements'."
+    },
+    {
+      "id": 146,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The projection of future earnings after all projected costs are subtracted from projected sales.",
+      "choices": [
+        "Profit Forecasting",
+        "Risk Avoidance",
+        "Activity Ratios",
+        "Systematic Risk"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Profit Forecasting'."
+    },
+    {
+      "id": 147,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The ratio of payoff to investment for a proposed project.",
+      "choices": [
+        "Aggressive Assets",
+        "Default",
+        "Profitability Index (PI)",
+        "Efficient market"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Profitability Index (PI)'."
+    },
+    {
+      "id": 148,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A category of ratios that are commonly used to directly judge how well management is doing as they strive to maximize owner wealth.",
+      "choices": [
+        "Profitability Ratios",
+        "Par Bond",
+        "Interest Rate Risk",
+        "Pension Fund"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Profitability Ratios'."
+    },
+    {
+      "id": 149,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Firms that have issued shares to the public.",
+      "choices": [
+        "Publicly Traded Firms",
+        "Mutually Exclusive",
+        "Sunk Costs",
+        "Personal Bankers"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Publicly Traded Firms'."
+    },
+    {
+      "id": 150,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A liquidity ratios found by current assets less inventory, divided by current liabilities; also called the acid-test ratio.",
+      "choices": [
+        "Venture Capitalists (VCs)",
+        "Coupon Rate",
+        "Quick Ratio",
+        "Market Capitalization"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Quick Ratio'."
+    },
+    {
+      "id": 151,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An interest rate that is adjusted to remove the effects of inflation.",
+      "choices": [
+        "Real Rate",
+        "Idiosyncratic Risk",
+        "Financial Policy Implementation",
+        "Leverage"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Real Rate'."
+    },
+    {
+      "id": 152,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The minimum return or compensation an investor requires in order to invest; see interest rate.",
+      "choices": [
+        "Auction Market",
+        "Required Rate of Return",
+        "Firm-specific Risk",
+        "Agency Problem"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Required Rate of Return'."
+    },
+    {
+      "id": 153,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The business function responsible for improving and developing services and products.",
+      "choices": [
+        "Venture Capitalists (VCs)",
+        "Bond Indenture",
+        "Research and Development",
+        "Market-to-book Ratio (M/B Ratio)"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Research and Development'."
+    },
+    {
+      "id": 154,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The percent of net income retained in the firm; also called the plowback ratio.",
+      "choices": [
+        "Maturity Date",
+        "Retention Ratio",
+        "Price Risk",
+        "Syndicate"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Retention Ratio'."
+    },
+    {
+      "id": 155,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The money gained or lost on an investment over a certain period of time.",
+      "choices": [
+        "Return",
+        "Hybrid Security",
+        "Syndicate",
+        "Profitability Index (PI)"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Return'."
+    },
+    {
+      "id": 156,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A profitability ratio found by net income divided by total assets.",
+      "choices": [
+        "Return On Assets (ROA)",
+        "Interest Rate",
+        "Risk Avoidance",
+        "Capital-constrained Environment"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Return On Assets (ROA)'."
+    },
+    {
+      "id": 157,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A profitability ratio found by net income divided by owners\u2019 equity.",
+      "choices": [
+        "Market Risk",
+        "New York Stock Exchange (NYSE)",
+        "Liquidity",
+        "Return On Equity (ROE)"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Return On Equity (ROE)'."
+    },
+    {
+      "id": 158,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The top line of the income statement. The total amount of money a business brings in (before subtracting any costs).",
+      "choices": [
+        "Current Ratio",
+        "Balance Sheet Forecasting",
+        "Revenues",
+        "Research and Development"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Revenues'."
+    },
+    {
+      "id": 159,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The possibility that the realized or actual return will differ from the expected return.",
+      "choices": [
+        "Risk Retention",
+        "Risk",
+        "Ordinary Annuity",
+        "Plowback Ratio"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Risk'."
+    },
+    {
+      "id": 160,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A way to manage risk by not performing an activity that may carry risk.",
+      "choices": [
+        "Teller",
+        "Revenues",
+        "Sustainable Growth Rate (SGR)",
+        "Risk Avoidance"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Risk Avoidance'."
+    },
+    {
+      "id": 161,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The compensation for the amount of risk taken on by investors.",
+      "choices": [
+        "Par Value",
+        "Risk Separation",
+        "Risk Premium",
+        "Bond Indenture"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Risk Premium'."
+    },
+    {
+      "id": 162,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A series of techniques that help reduce the amount of risk a person is exposed to by taking a particular action.",
+      "choices": [
+        "Nondiversifiable Risk",
+        "Interest Rate Risk",
+        "Risk Reduction",
+        "External Financing Needed (EFN)"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Risk Reduction'."
+    },
+    {
+      "id": 163,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A decision to take responsibility for a particular risk.",
+      "choices": [
+        "NASDAQ",
+        "Liquid Asset",
+        "Credit Analysts",
+        "Risk Retention"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Risk Retention'."
+    },
+    {
+      "id": 164,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A risk management technique that involves dispersing assets geographically instead of concentrating them in one location.",
+      "choices": [
+        "Risk Separation",
+        "Morals",
+        "Cash Management",
+        "Balance Sheet Forecasting"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Risk Separation'."
+    },
+    {
+      "id": 165,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A risk management technique that involves reducing the amount of risk you are exposed to by transferring that risk to another entity.",
+      "choices": [
+        "Legal",
+        "Face Value",
+        "Payout Ratio",
+        "Risk Transfer"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Risk Transfer'."
+    },
+    {
+      "id": 166,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The rate of return on an investment with no risk.",
+      "choices": [
+        "Cumulative",
+        "Risk-free Rate",
+        "Capital",
+        "Corporate Bonds"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Risk-free Rate'."
+    },
+    {
+      "id": 167,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The top line of the income statement. The total amount of money a business brings in (before subtracting out any costs).",
+      "choices": [
+        "Board of Directors",
+        "Corporate Governance",
+        "NASDAQ",
+        "Sales"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Sales'."
+    },
+    {
+      "id": 168,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Firms whose performance varies according to the season.",
+      "choices": [
+        "Seasonal Firms",
+        "Pension Fund",
+        "Agency Costs",
+        "Market Ratios"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Seasonal Firms'."
+    },
+    {
+      "id": 169,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The financial market where securities are traded after the initial issuance.",
+      "choices": [
+        "Gross Margin",
+        "Holding Period Return",
+        "Price-to-earnings Ratio (P/E Ratio)",
+        "Secondary Market"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Secondary Market'."
+    },
+    {
+      "id": 170,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The process of combining several types of contractual debt (such as mortgages) and reselling them as a package to investors.",
+      "choices": [
+        "Mutual Fund",
+        "Securitization",
+        "Compounding Interest",
+        "Profitability Ratios"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Securitization'."
+    },
+    {
+      "id": 171,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A person who owns shares of a company\u2019s stock.",
+      "choices": [
+        "External Financing Needed (EFN)",
+        "Shareholders",
+        "Default",
+        "Pro Forma Statements"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Shareholders'."
+    },
+    {
+      "id": 172,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The interest earned only on the principal.",
+      "choices": [
+        "Corporate Governance",
+        "Bond Indenture",
+        "Firm-specific Risk",
+        "Simple Interest"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Simple Interest'."
+    },
+    {
+      "id": 173,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A market maker on the NYSE that holds an inventory of securities and acts as a liquidity provider to those that wish to buy and sell.",
+      "choices": [
+        "Ethical Dilemma",
+        "Beta",
+        "Teller",
+        "Specialist"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Specialist'."
+    },
+    {
+      "id": 174,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Accounts that vary naturally with sales.",
+      "choices": [
+        "Risk Reduction",
+        "Spontaneous Accounts",
+        "Central Banks",
+        "Diversification"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Spontaneous Accounts'."
+    },
+    {
+      "id": 175,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Anyone who may be affected by actions taken or a decision made.",
+      "choices": [
+        "Stakeholder",
+        "External Financing Needed (EFN)",
+        "Cash Management",
+        "NASDAQ"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Stakeholder'."
+    },
+    {
+      "id": 176,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A measure of dispersion of possible outcomes about the mean.",
+      "choices": [
+        "Standard Deviation",
+        "Par Bond",
+        "Price Risk",
+        "Pension Fund"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Standard Deviation'."
+    },
+    {
+      "id": 177,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The level of growth where four key financial ratios\u2014profitability, asset utilization, leverage, and payout\u2014are constant and where the firm does not need to issue any new equity to fund the growth.",
+      "choices": [
+        "Steady State Growth",
+        "Risk",
+        "Estates",
+        "Harvest"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Steady State Growth'."
+    },
+    {
+      "id": 178,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A share of ownership in a company.",
+      "choices": [
+        "Stock",
+        "Payout Ratio",
+        "Default",
+        "Bond Indenture"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Stock'."
+    },
+    {
+      "id": 179,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A cost that has already been incurred and cannot be recovered.",
+      "choices": [
+        "Capital Budgeting Criteria",
+        "U.S Treasuries",
+        "Accounts Receivable Turnover (AR Turnover)",
+        "Sunk Costs"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Sunk Costs'."
+    },
+    {
+      "id": 180,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The growth rate that allows a firm to maintain its present financial ratios without issuing new equity.",
+      "choices": [
+        "Sustainable Growth Rate (SGR)",
+        "Compounding Interest",
+        "Steady State Growth",
+        "Board of Directors"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Sustainable Growth Rate (SGR)'."
+    },
+    {
+      "id": 181,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A group of intermediaries that is used to oversee the issuance of stocks and/or bonds.",
+      "choices": [
+        "Trusts",
+        "Cross-sectional Analysis",
+        "Syndicate",
+        "Default"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Syndicate'."
+    },
+    {
+      "id": 182,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Risk that is inherent in the economy as a whole and cannot be diversified away; also called market risk or nondiversifiable risk.",
+      "choices": [
+        "Systematic Risk",
+        "Market Ratios",
+        "Plowback Ratio",
+        "Inventory Turnover"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Systematic Risk'."
+    },
+    {
+      "id": 183,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Methods used to minimize the amount of taxes a business pays.",
+      "choices": [
+        "Covenants",
+        "Tax Strategies",
+        "Debt-to-equity Ratio",
+        "Risk Premium"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Tax Strategies'."
+    },
+    {
+      "id": 184,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An entry-level commercial bank position with the reponsibility to interact with customers at the bank\u2019s front desk or drive-through window.",
+      "choices": [
+        "Teller",
+        "Correlation",
+        "Utility",
+        "Default"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Teller'."
+    },
+    {
+      "id": 185,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The idea that money that is available at the present time is worth more than the same amount in the future.",
+      "choices": [
+        "Premium Bond",
+        "Time Value of Money (TVM)",
+        "Ethics",
+        "Systematic Risk"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Time Value of Money (TVM)'."
+    },
+    {
+      "id": 186,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A financing ratio found by EBIT divided by interest expenses.",
+      "choices": [
+        "Cash Budgets",
+        "Par Bond",
+        "Times Interest Earned (TIE)",
+        "Agency Problem"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Times Interest Earned (TIE)'."
+    },
+    {
+      "id": 187,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An activity ratio found by sales divided by total assets.",
+      "choices": [
+        "Nonsystematic Risk",
+        "Maturity Date",
+        "Profitability Ratios",
+        "Total Asset Turnover (TAT)"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Total Asset Turnover (TAT)'."
+    },
+    {
+      "id": 188,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A bill issued by the U.S. government as a financial security with no interest and a maturity of less than one year; abbreviated T-bill.",
+      "choices": [
+        "Stakeholder",
+        "Treasury Bill",
+        "Risk",
+        "Interest Rate"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Treasury Bill'."
+    },
+    {
+      "id": 189,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A note issued by the U.S. government as a financial security with a fixed interest rate and a short maturity between 1 and 10 years; abbreviated T-note.",
+      "choices": [
+        "Personal Bankers",
+        "Return On Equity (ROE)",
+        "Simple Interest",
+        "Treasury Note"
+      ],
+      "answer": 3,
+      "explanation": "The correct term is 'Treasury Note'."
+    },
+    {
+      "id": 190,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A debt instrument (bond) that is issued by the United States government in order to raise capital.",
+      "choices": [
+        "Treasury Securities",
+        "Bondholders",
+        "Insurance Companies",
+        "Par Value"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Treasury Securities'."
+    },
+    {
+      "id": 191,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Comparing a firm\u2019s ratios across time.",
+      "choices": [
+        "Gordon Growth Model",
+        "Discounting",
+        "Trend Analysis",
+        "Hurdle Rate"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Trend Analysis'."
+    },
+    {
+      "id": 192,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An arrangement that allows a third party to hold assets on behalf of a beneficiary or beneficiaries.",
+      "choices": [
+        "Yield to Maturity (YTM)",
+        "New York Stock Exchange (NYSE)",
+        "Trusts",
+        "Required Rate of Return"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Trusts'."
+    },
+    {
+      "id": 193,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An independent federal government agency that (1) protects investors, (2) maintains fair, orderly, and efficient markets, and (3) facilitates capital formation.",
+      "choices": [
+        "Annuity Due",
+        "U.S Securities and Exchange Commission (SEC)",
+        "Asset Pricing",
+        "Market-to-book Ratio (M/B Ratio)"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'U.S Securities and Exchange Commission (SEC)'."
+    },
+    {
+      "id": 194,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Bonds, bills, and notes issued by the U.S. government; considered to be the highest-quality securities available.",
+      "choices": [
+        "Insurance Companies",
+        "U.S Treasuries",
+        "Ordinary Annuity",
+        "Efficient market"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'U.S Treasuries'."
+    },
+    {
+      "id": 195,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The unlimited earnings potential of equity ownership.",
+      "choices": [
+        "Total Asset Turnover (TAT)",
+        "Upside Potential",
+        "Inflation",
+        "Par Value"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Upside Potential'."
+    },
+    {
+      "id": 196,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The total satisfaction received from consuming goods and services.",
+      "choices": [
+        "Cumulative",
+        "Seasonal Firms",
+        "Utility",
+        "Discount Bond"
+      ],
+      "answer": 2,
+      "explanation": "The correct term is 'Utility'."
+    },
+    {
+      "id": 197,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - An expense that you have direct control over and that can change from period to period.",
+      "choices": [
+        "Profit Forecasting",
+        "Variable Expenditures",
+        "Capital Asset Pricing Model (CAPM)",
+        "Compounding Interest"
+      ],
+      "answer": 1,
+      "explanation": "The correct term is 'Variable Expenditures'."
+    },
+    {
+      "id": 198,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - Professional managers of investment capital that typically invest in very young new ventures.",
+      "choices": [
+        "Venture Capitalists (VCs)",
+        "Operating Income Return On Investment (OIROI)",
+        "Inventory Turnover",
+        "Market Capitalization"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Venture Capitalists (VCs)'."
+    },
+    {
+      "id": 199,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - A legal expression of an individual\u2019s wishes concerning the desposition of his or her property after death.",
+      "choices": [
+        "Wills",
+        "Liquidity",
+        "Compounding",
+        "Debt-to-equity Ratio"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Wills'."
+    },
+    {
+      "id": 200,
+      "type": "multiple_choice",
+      "question": "Fill in the blank: _____ - The rate of return that investors receive on a bond if they purchase a bond today at the market price and hold it until it matures; the required rate of return given the maturity and risk of the bond.",
+      "choices": [
+        "Yield to Maturity (YTM)",
+        "Tax Strategies",
+        "Debt Ratio",
+        "Treasury Bill"
+      ],
+      "answer": 0,
+      "explanation": "The correct term is 'Yield to Maturity (YTM)'."
+    }
+  ]
+}
