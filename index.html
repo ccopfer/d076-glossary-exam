@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D076 Glossary Fill-in-the-Blank Exam</title>
+  <style>
+    body {
+      font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+      background-color: #f4f6f9;
+      padding: 20px;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+    h1 {
+      text-align: center;
+      color: #003058;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .question-container {
+      background: #ffffff;
+      border: 2px dashed #003058;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 2px 2px 8px rgba(0, 150, 136, 0.1);
+    }
+    .choices label {
+      display: block;
+      background: #e6ecf2;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #003058;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+    .correct {
+      background-color: #c8e6c9;
+    }
+    .incorrect {
+      background-color: #ffcdd2;
+    }
+    #score-summary {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      color: #003058;
+    }
+    #progress-bar {
+      width: 100%;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 20px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    #progress {
+      height: 100%;
+      width: 0;
+      background-color: #003058;
+      transition: width 0.3s;
+    }
+    #progress-text {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 0.9rem;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>D076 Glossary Fill-in-the-Blank Exam</h1>
+  <div id="progress-bar">
+    <div id="progress"></div>
+    <div id="progress-text">0%</div>
+  </div>
+  <div id="quiz"></div>
+  <button id="submit">Submit Answers</button>
+  <div id="score-summary"></div>
+  <script>
+    let quizData = [];
+    let score = 0;
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    fetch('quiz-data.json')
+      .then(response => response.json())
+      .then(data => {
+        quizData = data.questions;
+        shuffleArray(quizData);
+        quizData.forEach(q => shuffleArray(q.choices));
+        renderQuiz();
+      });
+
+    function updateProgress() {
+      const total = quizData.length;
+      let answered = 0;
+      quizData.forEach((q, index) => {
+        if (document.querySelector(`input[name="q${index}"]:checked`)) {
+          answered++;
+        }
+      });
+      const percent = (answered / total) * 100;
+      document.getElementById('progress').style.width = `${percent}%`;
+      document.getElementById('progress-text').textContent = `${Math.round(percent)}%`;
+    }
+
+    function renderQuiz() {
+      const quizContainer = document.getElementById('quiz');
+      quizData.forEach((q, index) => {
+        const div = document.createElement('div');
+        div.className = 'question-container';
+        div.innerHTML = `<p><strong>Q${index + 1}:</strong> ${q.question}</p>`;
+
+        const choicesDiv = document.createElement('div');
+        choicesDiv.className = 'choices';
+        q.choices.forEach((choice, i) => {
+          const id = `q${index}_choice${i}`;
+          choicesDiv.innerHTML += `
+            <label><input type="radio" name="q${index}" value="${i}" id="${id}" onchange="updateProgress()" /> ${choice}</label>
+          `;
+        });
+        div.appendChild(choicesDiv);
+        quizContainer.appendChild(div);
+      });
+    }
+
+    document.getElementById('submit').addEventListener('click', () => {
+      score = 0;
+      quizData.forEach((q, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        const container = document.querySelectorAll('.question-container')[index];
+        if (selected) {
+          const selectedValue = selected.nextSibling.textContent.trim();
+          const labels = container.querySelectorAll('label');
+          labels.forEach(label => {
+            const choiceText = label.textContent.trim();
+            label.classList.remove('correct', 'incorrect');
+            if (choiceText === q.choices[q.answer]) {
+              label.classList.add('correct');
+            } else if (choiceText === selectedValue) {
+              label.classList.add('incorrect');
+            }
+          });
+          if (selectedValue === q.choices[q.answer]) {
+            score++;
+          }
+        }
+      });
+
+      const percentScore = (score / quizData.length) * 100;
+      document.getElementById('progress').style.width = `${percentScore}%`;
+      document.getElementById('progress-text').textContent = `Score: ${score} / ${quizData.length}`;
+
+      const summary = document.getElementById('score-summary');
+      summary.innerHTML = `<strong>Your Score: ${score} / ${quizData.length}</strong>`;
+    });
+  </script>
+</body>
+</html>
