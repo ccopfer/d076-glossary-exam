@@ -177,7 +177,7 @@
             const explanationText = q.explanation?.trim();
             const matchIndex = q.choices.findIndex(choice => choice.trim() === explanationText);
             q.answer = matchIndex !== -1 ? matchIndex : 0;
-            q.correctText = explanationText || q.choices[q.answer];
+            q.correctText = q.choices[q.answer];
           });
 
           renderQuiz();
@@ -254,12 +254,13 @@
           }
         });
 
-        if (selectedValue.trim() === q.correctText) {
+        const correctChoice = q.choices[q.answer]?.trim();
+        if (selectedValue.trim() === correctChoice) {
           feedback.textContent = 'Correct!';
           feedback.style.color = 'green';
           score++;
         } else {
-          feedback.textContent = `Incorrect. Correct answer: ${q.correctText}`;
+          feedback.textContent = `Incorrect. Correct answer: ${correctChoice}`;
           feedback.style.color = 'red';
         }
         updateProgress();
