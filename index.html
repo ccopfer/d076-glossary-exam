@@ -43,20 +43,23 @@
     }
     #progress-bar {
       width: 100%;
-      background-color: #eee;
-      height: 30px;
-      margin: 20px auto;
-      border-radius: 10px;
-      overflow: hidden;
+      background-color: #003058;
+      height: 36px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      border: 2px solid #0078d4;
     }
     #progress {
       height: 100%;
       width: 0;
       background-color: #00c851;
       text-align: center;
-      line-height: 30px;
-      color: black;
+      line-height: 36px;
+      color: #ffffff;
       font-weight: bold;
+      transition: width 0.3s;
     }
     .section {
       display: none;
@@ -66,7 +69,7 @@
     }
     #nav-buttons {
       text-align: center;
-      margin: 20px 0;
+      margin: 60px 0 20px;
     }
     #summary-page {
       display: none;
@@ -86,6 +89,19 @@
       border: none;
       cursor: pointer;
     }
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #003058;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 1000;
+    }
   </style>
 </head>
 <body>
@@ -101,6 +117,7 @@
     <button onclick="window.print()">Print Summary</button>
     <button onclick="retakeQuiz()">Retake Quiz</button>
   </div>
+  <button id="scrollTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
   <script>
     let quizData = [];
     let score = 0;
@@ -114,7 +131,7 @@
       return array;
     }
 
-    fetch('quiz-data.json')
+    fetch('explanation-fixed-quiz-data.json')
       .then(res => res.json())
       .then(data => {
         quizData = data.questions.map((q, index) => {
