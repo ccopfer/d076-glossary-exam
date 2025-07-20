@@ -52,15 +52,17 @@
       border: 2px solid #0078d4;
     }
     #progress {
-      height: 100%;
-      width: 0;
-      background-color: #00c851;
-      text-align: center;
-      line-height: 36px;
-      color: #ffffff;
-      font-weight: bold;
-      transition: width 0.3s;
-    }
+  height: 100%;
+  width: 0;
+  background-color: #00c851;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  color: #ffffff;
+  font-weight: bold;
+  transition: width 0.3s;
+}
     .section {
       display: none;
     }
@@ -107,7 +109,7 @@
 <body>
   <h1>D076 Glossary Quiz</h1>
   <div id="progress-bar"><div id="progress">0%</div></div>
-  <div id="nav-buttons"></div>
+  
   <div id="quiz"></div>
   <button onclick="submitQuiz()">Submit Answers</button>
   <div id="results"></div>
@@ -195,7 +197,18 @@
           questionDiv.appendChild(feedback);
           sectionDiv.appendChild(questionDiv);
         }
-        quizDiv.appendChild(sectionDiv);
+        $1
+
+        const nav = document.createElement('div');
+        nav.className = 'section-nav';
+        const numSections = Math.ceil(quizData.length / 50);
+        for (let i = 0; i < numSections; i++) {
+          const btn = document.createElement('button');
+          btn.textContent = `Section ${i + 1}`;
+          btn.onclick = () => showSection(i);
+          nav.appendChild(btn);
+        }
+        sectionDiv.appendChild(nav);
       }
     }
 
