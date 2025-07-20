@@ -131,7 +131,7 @@
       return array;
     }
 
-    fetch('quiz-data.json')
+    fetch('explanation-fixed-quiz-data.json')
       .then(res => res.json())
       .then(data => {
         quizData = data.questions.map((q, index) => {
@@ -218,10 +218,11 @@
     }
 
     function updateProgress() {
-      const percent = Math.round((score / total) * 100);
-      const progress = document.getElementById('progress');
-      progress.style.width = percent + '%';
-      progress.textContent = `${score} / 200 (${percent}%)`;
+  const percent = Math.round((score / 200) * 100);
+  const progress = document.getElementById('progress');
+  progress.style.width = percent + '%';
+  progress.textContent = `${score} / 200 (${percent}%)`;
+} / 200 (${percent}%)`;
     }
 
     function submitQuiz() {
