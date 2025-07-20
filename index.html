@@ -131,7 +131,7 @@
       return array;
     }
 
-    fetch('explanation-fixed-quiz-data.json')
+    fetch('quiz-data.json')
       .then(res => res.json())
       .then(data => {
         quizData = data.questions.map((q, index) => {
