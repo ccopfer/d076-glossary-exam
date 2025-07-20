@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D076 Glossary Fill-in-the-Blank Exam</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D076 Glossary Quiz</title>
   <style>
     body {
       font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
       background-color: #f4f6f9;
       padding: 20px;
       margin: 0;
-      box-sizing: border-box;
-    }
-    *, *::before, *::after {
-      box-sizing: inherit;
     }
     h1, h2 {
       text-align: center;
       color: #003058;
     }
-    .question-container {
+    .question {
       background: #ffffff;
       border: 2px dashed #003058;
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 25px;
-      box-shadow: 2px 2px 8px rgba(0, 150, 136, 0.1);
     }
     .choices label {
       display: block;
@@ -40,248 +35,201 @@
       margin-top: 10px;
       font-weight: bold;
     }
-    button {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      font-size: 1rem;
-      background-color: #003058;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
     .correct {
       background-color: #c8e6c9;
     }
     .incorrect {
       background-color: #ffcdd2;
     }
-    #score-summary {
-      text-align: center;
-      font-size: 1.2rem;
-      margin-top: 30px;
-      color: #003058;
-    }
     #progress-bar {
       width: 100%;
-      background-color: #003058;
-      border-radius: 8px;
+      background-color: #eee;
+      height: 30px;
+      margin: 20px auto;
+      border-radius: 10px;
       overflow: hidden;
-      height: 36px;
-      margin-bottom: 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 999;
-      border: 2px solid #0078d4;
     }
     #progress {
       height: 100%;
       width: 0;
       background-color: #00c851;
-      transition: width 0.3s;
-    }
-    #progress-text {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #ffffff;
-      font-size: 1.1rem;
+      text-align: center;
+      line-height: 30px;
+      color: black;
       font-weight: bold;
-      line-height: 36px;
-      text-shadow: 1px 1px 2px #000;
     }
     .section {
       display: none;
     }
-    .active-section {
+    .active {
       display: block;
     }
     #nav-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+      text-align: center;
       margin: 20px 0;
-    }
-    #scrollTopBtn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #003058;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 50%;
-      font-size: 1.2rem;
-      cursor: pointer;
-      z-index: 1000;
     }
     #summary-page {
       display: none;
+      text-align: center;
       background: #fff;
-      padding: 20px;
       border: 2px solid #003058;
       border-radius: 10px;
-      margin-top: 30px;
+      padding: 20px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 6px;
+      background-color: #003058;
+      color: white;
+      border: none;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <h1>D076 Glossary Fill-in-the-Blank Exam</h1>
-  <div id="progress-bar">
-    <div id="progress"></div>
-    <div id="progress-text">0%</div>
-  </div>
-  <div id="quiz"></div>
+  <h1>D076 Glossary Quiz</h1>
+  <div id="progress-bar"><div id="progress">0%</div></div>
   <div id="nav-buttons"></div>
-  <button id="submit">Submit Answers</button>
-  <div id="score-summary"></div>
+  <div id="quiz"></div>
+  <button onclick="submitQuiz()">Submit Answers</button>
+  <div id="results"></div>
   <div id="summary-page">
-    <h2>Summary</h2>
+    <h2>Quiz Summary</h2>
     <p id="final-score"></p>
-    <button onclick="printResults()">Export Results</button>
+    <button onclick="window.print()">Print Summary</button>
     <button onclick="retakeQuiz()">Retake Quiz</button>
   </div>
-  <button id="scrollTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
   <script>
     let quizData = [];
     let score = 0;
-    let answeredSet = new Set();
+    let total = 0;
 
-    function shuffleArray(array) {
+    function shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
       }
-      return array;
     }
 
-    function loadQuiz() {
-      fetch('quiz-data.json')
-        .then(response => response.json())
-        .then(data => {
-          score = 0;
-          answeredSet = new Set();
-          document.getElementById('quiz').innerHTML = '';
-          document.getElementById('nav-buttons').innerHTML = '';
-          document.getElementById('score-summary').innerHTML = '';
-          document.getElementById('submit').style.display = 'block';
-          document.getElementById('summary-page').style.display = 'none';
-
-          quizData = shuffleArray(data.questions);
-          quizData.forEach(q => {
-            const correct = q.explanation?.trim();
-            const incorrects = shuffleArray(
-              data.questions.filter(item => item.explanation !== q.explanation).map(item => item.explanation)
-            ).slice(0, 3);
-            q.choices = shuffleArray([correct, ...incorrects]);
-            q.answer = q.choices.findIndex(c => c.trim() === correct);
-          });
-
-          renderQuiz();
+    fetch('quiz-data.json')
+      .then(res => res.json())
+      .then(data => {
+        quizData = data.questions.map((q, index) => {
+          let choices = [...q.choices];
+          shuffle(choices);
+          return {
+            ...q,
+            id: index,
+            choices: choices
+          };
         });
-    }
-
-    function updateProgress() {
-      const total = quizData.length;
-      const percent = (score / total) * 100;
-      document.getElementById('progress').style.width = `${percent}%`;
-      document.getElementById('progress-text').textContent = `Correct: ${score} / ${total} (${Math.round(percent)}%)`;
-    }
+        shuffle(quizData);
+        total = quizData.length;
+        renderQuiz();
+        createSectionButtons();
+        showSection(0);
+      });
 
     function renderQuiz() {
-      const quizContainer = document.getElementById('quiz');
-      const navButtons = document.getElementById('nav-buttons');
+      const quizDiv = document.getElementById('quiz');
+      quizDiv.innerHTML = '';
       const sectionSize = 50;
-      const totalSections = Math.ceil(quizData.length / sectionSize);
+      const numSections = Math.ceil(quizData.length / sectionSize);
 
-      for (let s = 0; s < totalSections; s++) {
+      for (let s = 0; s < numSections; s++) {
         const sectionDiv = document.createElement('div');
         sectionDiv.className = 'section';
-        if (s === 0) sectionDiv.classList.add('active-section');
         sectionDiv.id = `section-${s}`;
 
         for (let i = s * sectionSize; i < Math.min((s + 1) * sectionSize, quizData.length); i++) {
           const q = quizData[i];
-          const div = document.createElement('div');
-          div.className = 'question-container';
-          div.innerHTML = `<p><strong>Q${i + 1}:</strong> ${q.question}</p>`;
+          const questionDiv = document.createElement('div');
+          questionDiv.className = 'question';
+
+          const questionText = document.createElement('p');
+          questionText.innerHTML = `<strong>Q${i + 1}:</strong> ${q.question}`;
+          questionDiv.appendChild(questionText);
 
           const choicesDiv = document.createElement('div');
           choicesDiv.className = 'choices';
-          q.choices.forEach((choice, c) => {
-            const id = `q${i}_choice${c}`;
-            choicesDiv.innerHTML += `<label><input type="radio" name="q${i}" value="${c}" id="${id}" onchange="handleSelection(${i}, '${choice.replace(/'/g, "\'")}')" /> ${choice}</label>`;
+          q.choices.forEach((choice, j) => {
+            const label = document.createElement('label');
+            const input = document.createElement('input');
+            input.type = 'radio';
+            input.name = `q${i}`;
+            input.value = choice;
+            input.onchange = () => handleAnswer(i, choice, q);
+            label.appendChild(input);
+            label.append(` ${choice}`);
+            choicesDiv.appendChild(label);
           });
 
-          div.appendChild(choicesDiv);
-          div.innerHTML += `<div class="feedback" id="feedback-${i}"></div>`;
-          sectionDiv.appendChild(div);
-        }
-        quizContainer.appendChild(sectionDiv);
+          const feedback = document.createElement('div');
+          feedback.className = 'feedback';
+          feedback.id = `feedback-${i}`;
 
-        const button = document.createElement('button');
-        button.textContent = `Section ${s + 1}`;
-        button.onclick = () => {
-          document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active-section'));
-          document.getElementById(`section-${s}`).classList.add('active-section');
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
-        navButtons.appendChild(button);
+          questionDiv.appendChild(choicesDiv);
+          questionDiv.appendChild(feedback);
+          sectionDiv.appendChild(questionDiv);
+        }
+        quizDiv.appendChild(sectionDiv);
       }
     }
 
-    function handleSelection(index, selectedValue) {
-      if (!answeredSet.has(index)) {
-        answeredSet.add(index);
-        const q = quizData[index];
-        const container = document.querySelectorAll('.question-container')[index];
-        const feedback = document.getElementById(`feedback-${index}`);
-        const labels = container.querySelectorAll('label');
+    function handleAnswer(index, selected, question) {
+      const feedback = document.getElementById(`feedback-${index}`);
+      const correctAnswer = question.choices[question.answer];
+      const allInputs = document.getElementsByName(`q${index}`);
 
-        labels.forEach(label => {
-          const input = label.querySelector('input');
-          input.disabled = true;
-          const choiceText = label.textContent.trim();
-          label.classList.remove('correct', 'incorrect');
-          if (choiceText === q.choices[q.answer]) {
-            label.classList.add('correct');
-          } else if (choiceText === selectedValue) {
-            label.classList.add('incorrect');
-          }
-        });
+      allInputs.forEach(input => input.disabled = true);
 
-        const correctChoice = q.choices[q.answer]?.trim();
-        if (selectedValue.trim() === correctChoice) {
-          feedback.textContent = 'Correct!';
-          feedback.style.color = 'green';
-          score++;
-        } else {
-          feedback.textContent = `Incorrect. Correct answer: ${correctChoice}`;
-          feedback.style.color = 'red';
-        }
-        updateProgress();
+      if (selected.trim() === correctAnswer.trim()) {
+        feedback.textContent = 'Correct!';
+        feedback.style.color = 'green';
+        score++;
+      } else {
+        feedback.textContent = `Incorrect. Correct answer: ${correctAnswer}`;
+        feedback.style.color = 'red';
       }
+      updateProgress();
     }
 
-    document.getElementById('submit').addEventListener('click', () => {
-      document.getElementById('final-score').textContent = `Final Score: ${score} / ${quizData.length} (${Math.round((score / quizData.length) * 100)}%)`;
+    function updateProgress() {
+      const percent = Math.round((score / total) * 100);
+      const progress = document.getElementById('progress');
+      progress.style.width = percent + '%';
+      progress.textContent = `${score} / ${total} (${percent}%)`;
+    }
+
+    function submitQuiz() {
+      document.getElementById('results').style.display = 'none';
       document.getElementById('summary-page').style.display = 'block';
-      document.getElementById('submit').style.display = 'none';
-    });
-
-    function printResults() {
-      window.print();
+      document.getElementById('final-score').textContent = `Final Score: ${score} out of ${total} (${Math.round((score / total) * 100)}%)`;
     }
 
     function retakeQuiz() {
-      loadQuiz();
+      location.reload();
     }
 
-    loadQuiz();
+    function createSectionButtons() {
+      const nav = document.getElementById('nav-buttons');
+      const numSections = Math.ceil(quizData.length / 50);
+      for (let i = 0; i < numSections; i++) {
+        const btn = document.createElement('button');
+        btn.textContent = `Section ${i + 1}`;
+        btn.onclick = () => showSection(i);
+        nav.appendChild(btn);
+      }
+    }
+
+    function showSection(index) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+      const section = document.getElementById(`section-${index}`);
+      if (section) section.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   </script>
 </body>
 </html>
