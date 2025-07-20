@@ -53,22 +53,24 @@
   border: 2px solid #0078d4;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
 }
     #progress {
   height: 100%;
+  width: 0%;
   background-color: #00c851;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-  color: #ffffff;
-  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
   transition: width 0.3s;
-  padding: 0 20px;
-  border-radius: 4px;
+  z-index: -1;
 }
     .section {
       display: none;
