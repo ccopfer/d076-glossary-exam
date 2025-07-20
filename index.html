@@ -11,16 +11,13 @@
       padding: 20px;
       margin: 0;
       box-sizing: border-box;
-      position: relative;
     }
     *, *::before, *::after {
       box-sizing: inherit;
     }
-    h1 {
+    h1, h2 {
       text-align: center;
       color: #003058;
-      font-size: 2.5rem;
-      margin-bottom: 30px;
     }
     .question-container {
       background: #ffffff;
@@ -54,9 +51,6 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    .hidden {
-      display: none;
-    }
     .correct {
       background-color: #c8e6c9;
     }
@@ -71,17 +65,21 @@
     }
     #progress-bar {
       width: 100%;
-      background-color: #e0e0e0;
+      background-color: #003058;
       border-radius: 8px;
       overflow: hidden;
-      height: 20px;
+      height: 36px;
       margin-bottom: 20px;
-      position: relative;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      border: 2px solid #0078d4;
     }
     #progress {
       height: 100%;
       width: 0;
-      background-color: #003058;
+      background-color: #00c851;
       transition: width 0.3s;
     }
     #progress-text {
@@ -89,9 +87,11 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      color: white;
-      font-size: 0.9rem;
-      line-height: 20px;
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      line-height: 36px;
+      text-shadow: 1px 1px 2px #000;
     }
     .section {
       display: none;
@@ -101,6 +101,7 @@
     }
     #nav-buttons {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
       margin: 20px 0;
@@ -116,6 +117,15 @@
       border-radius: 50%;
       font-size: 1.2rem;
       cursor: pointer;
+      z-index: 1000;
+    }
+    #summary-page {
+      display: none;
+      background: #fff;
+      padding: 20px;
+      border: 2px solid #003058;
+      border-radius: 10px;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -129,11 +139,17 @@
   <div id="nav-buttons"></div>
   <button id="submit">Submit Answers</button>
   <div id="score-summary"></div>
+  <div id="summary-page">
+    <h2>Summary</h2>
+    <p id="final-score"></p>
+    <button onclick="printResults()">Export Results</button>
+    <button onclick="retakeQuiz()">Retake Quiz</button>
+  </div>
   <button id="scrollTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
-
   <script>
     let quizData = [];
     let score = 0;
+    let answeredSet = new Set();
 
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -142,30 +158,32 @@
       }
     }
 
-    fetch('quiz-data.json')
-      .then(response => response.json())
-      .then(data => {
-        quizData = data.questions;
-        shuffleArray(quizData);
-        quizData.forEach(q => shuffleArray(q.choices));
-        renderQuiz();
-      });
+    function loadQuiz() {
+      fetch('quiz-data.json')
+        .then(response => response.json())
+        .then(data => {
+          score = 0;
+          answeredSet = new Set();
+          document.getElementById('quiz').innerHTML = '';
+          document.getElementById('nav-buttons').innerHTML = '';
+          document.getElementById('score-summary').innerHTML = '';
+          document.getElementById('submit').style.display = 'block';
+          document.getElementById('summary-page').style.display = 'none';
+
+          quizData = data.questions;
+          quizData.forEach(q => {
+            shuffleArray(q.choices);
+            q.answer = q.choices.indexOf(q.explanation);
+          });
+
+          renderQuiz();
+        });
+    }
 
     function updateProgress() {
       const total = quizData.length;
-      let answered = 0;
-      let correct = 0;
-      quizData.forEach((q, index) => {
-        const selected = document.querySelector(`input[name='q${index}']:checked`);
-        if (selected) {
-          answered++;
-          const selectedValue = selected.nextSibling.textContent.trim();
-          if (selectedValue === q.choices[q.answer]) {
-            correct++;
-          }
-        }
-      });
-      const percent = (correct / total) * 100;
+      let correct = score;
+      let percent = (correct / total) * 100;
       document.getElementById('progress').style.width = `${percent}%`;
       document.getElementById('progress-text').textContent = `Correct: ${correct} / ${total} (${Math.round(percent)}%)`;
     }
@@ -192,9 +210,7 @@
           choicesDiv.className = 'choices';
           q.choices.forEach((choice, c) => {
             const id = `q${i}_choice${c}`;
-            choicesDiv.innerHTML += `
-              <label><input type="radio" name="q${i}" value="${c}" id="${id}" onchange="handleSelection(${i}, '${choice.replace(/'/g, "\'")}')" /> ${choice}</label>
-            `;
+            choicesDiv.innerHTML += `<label><input type="radio" name="q${i}" value="${c}" id="${id}" onchange="handleSelection(${i}, '${choice.replace(/'/g, "\'")}')" /> ${choice}</label>`;
           });
 
           div.appendChild(choicesDiv);
@@ -215,33 +231,52 @@
     }
 
     function handleSelection(index, selectedValue) {
-      const q = quizData[index];
-      const container = document.querySelectorAll('.question-container')[index];
-      const feedback = document.getElementById(`feedback-${index}`);
-      const labels = container.querySelectorAll('label');
+      if (!answeredSet.has(index)) {
+        answeredSet.add(index);
+        const q = quizData[index];
+        const container = document.querySelectorAll('.question-container')[index];
+        const feedback = document.getElementById(`feedback-${index}`);
+        const labels = container.querySelectorAll('label');
 
-      labels.forEach(label => {
-        const input = label.querySelector('input');
-        input.disabled = true;
-        const choiceText = label.textContent.trim();
-        label.classList.remove('correct', 'incorrect');
-        if (choiceText === q.choices[q.answer]) {
-          label.classList.add('correct');
-        } else if (choiceText === selectedValue) {
-          label.classList.add('incorrect');
+        labels.forEach(label => {
+          const input = label.querySelector('input');
+          input.disabled = true;
+          const choiceText = label.textContent.trim();
+          label.classList.remove('correct', 'incorrect');
+          if (choiceText === q.choices[q.answer]) {
+            label.classList.add('correct');
+          } else if (choiceText === selectedValue) {
+            label.classList.add('incorrect');
+          }
+        });
+
+        if (selectedValue === q.choices[q.answer]) {
+          feedback.textContent = 'Correct!';
+          feedback.style.color = 'green';
+          score++;
+        } else {
+          feedback.textContent = `Incorrect. Correct answer: ${q.choices[q.answer]}`;
+          feedback.style.color = 'red';
         }
-      });
-
-      if (selectedValue === q.choices[q.answer]) {
-        feedback.textContent = 'Correct!';
-        feedback.style.color = 'green';
-      } else {
-        feedback.textContent = `Incorrect. Correct answer: ${q.choices[q.answer]}`;
-        feedback.style.color = 'red';
+        updateProgress();
       }
-
-      updateProgress();
     }
+
+    document.getElementById('submit').addEventListener('click', () => {
+      document.getElementById('final-score').textContent = `Final Score: ${score} / ${quizData.length} (${Math.round((score / quizData.length) * 100)}%)`;
+      document.getElementById('summary-page').style.display = 'block';
+      document.getElementById('submit').style.display = 'none';
+    });
+
+    function printResults() {
+      window.print();
+    }
+
+    function retakeQuiz() {
+      loadQuiz();
+    }
+
+    loadQuiz();
   </script>
 </body>
 </html>
