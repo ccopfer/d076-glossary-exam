@@ -173,8 +173,9 @@
           quizData = data.questions;
           quizData.forEach(q => {
             shuffleArray(q.choices);
-            q.answer = q.choices.indexOf(q.explanation);
-            q.correctText = q.explanation; // save for feedback use
+            const explanationText = q.explanation.trim();
+            q.answer = q.choices.findIndex(choice => choice.trim() === explanationText);
+            q.correctText = explanationText;
           });
 
           renderQuiz();
