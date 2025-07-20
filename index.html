@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>D076 Glossary Quiz</title>
   <style>
-    body {$1
+    body {
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  box-sizing: border-box;
   padding-top: 60px;
 }
     h1, h2 {
@@ -47,12 +51,14 @@
   left: 0;
   z-index: 999;
   border: 2px solid #0078d4;
-  padding: 0 10px;
+  padding: 0;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
     #progress {
   height: 100%;
-  width: 0;
   background-color: #00c851;
   display: flex;
   justify-content: center;
@@ -61,6 +67,8 @@
   color: #ffffff;
   font-weight: bold;
   transition: width 0.3s;
+  padding: 0 20px;
+  border-radius: 4px;
 }
     .section {
       display: none;
