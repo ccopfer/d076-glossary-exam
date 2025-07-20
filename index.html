@@ -171,11 +171,13 @@
           document.getElementById('summary-page').style.display = 'none';
 
           quizData = data.questions;
+          shuffleArray(quizData);
           quizData.forEach(q => {
             shuffleArray(q.choices);
-            const explanationText = q.explanation.trim();
-            q.answer = q.choices.findIndex(choice => choice.trim() === explanationText);
-            q.correctText = explanationText;
+            const explanationText = q.explanation?.trim();
+            const matchIndex = q.choices.findIndex(choice => choice.trim() === explanationText);
+            q.answer = matchIndex !== -1 ? matchIndex : 0;
+            q.correctText = explanationText || q.choices[q.answer];
           });
 
           renderQuiz();
@@ -252,7 +254,7 @@
           }
         });
 
-        if (selectedValue === q.choices[q.answer]) {
+        if (selectedValue.trim() === q.correctText) {
           feedback.textContent = 'Correct!';
           feedback.style.color = 'green';
           score++;
