@@ -198,7 +198,7 @@
           sectionDiv.appendChild(questionDiv);
         }const nav = document.createElement('div');
         nav.className = 'section-nav';
-        const numSections = Math.ceil(quizData.length / 50);
+        // removed redeclaration to fix quiz loading
         for (let i = 0; i < numSections; i++) {
           const btn = document.createElement('button');
           btn.textContent = `Section ${i + 1}`;
