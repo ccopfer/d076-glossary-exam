@@ -160,21 +160,24 @@
 
     function loadQuiz() {
       fetch('quiz-data.json')
-        .then(response => response.json())
-        .then(data => {
-          score = 0;
-          answeredSet = new Set();
-          document.getElementById('quiz').innerHTML = '';
-          document.getElementById('nav-buttons').innerHTML = '';
-          document.getElementById('score-summary').innerHTML = '';
-          document.getElementById('submit').style.display = 'block';
-          document.getElementById('summary-page').style.display = 'none';
-
-          quizData = data.questions;
-          shuffleArray(quizData);
-          quizData.forEach(q => shuffleArray(q.choices));
-          renderQuiz();
+      .then(res => res.json())
+      .then(data => {
+        quizData = data.questions.map((q, index) => {
+          const correctText = q.explanation.trim();
+          let choices = shuffle([...q.choices]);
+          const answerIndex = choices.findIndex(c => c.trim() === correctText);
+          return {
+            ...q,
+            id: index,
+            choices: choices,
+            answer: answerIndex,
+            correctText: correctText
+          };
         });
+        shuffle(quizData);
+        total = quizData.length;
+        renderQuiz();
+      });
     }
 
     function updateProgress() {
@@ -186,76 +189,76 @@
     }
 
     function renderQuiz() {
-      const quizContainer = document.getElementById('quiz');
-      const navButtons = document.getElementById('nav-buttons');
+      const quizDiv = document.getElementById('quiz');
+      quizDiv.innerHTML = '';
       const sectionSize = 50;
-      const totalSections = Math.ceil(quizData.length / sectionSize);
+      const numSections = Math.ceil(quizData.length / sectionSize);
 
-      for (let s = 0; s < totalSections; s++) {
+      for (let s = 0; s < numSections; s++) {
         const sectionDiv = document.createElement('div');
         sectionDiv.className = 'section';
-        if (s === 0) sectionDiv.classList.add('active-section');
         sectionDiv.id = `section-${s}`;
 
         for (let i = s * sectionSize; i < Math.min((s + 1) * sectionSize, quizData.length); i++) {
           const q = quizData[i];
-          const div = document.createElement('div');
-          div.className = 'question-container';
-          div.innerHTML = `<p><strong>Q${i + 1}:</strong> ${q.question}</p>`;
+          const questionDiv = document.createElement('div');
+          questionDiv.className = 'question';
+
+          const questionText = document.createElement('p');
+          questionText.innerHTML = `<strong>Q${i + 1}:</strong> ${q.question}`;
+          questionDiv.appendChild(questionText);
 
           const choicesDiv = document.createElement('div');
           choicesDiv.className = 'choices';
-          q.choices.forEach((choice, c) => {
-            const id = `q${i}_choice${c}`;
-            choicesDiv.innerHTML += `<label><input type="radio" name="q${i}" value="${c}" id="${id}" onchange="handleSelection(${i}, '${choice.replace(/'/g, "\'")}')" /> ${choice}</label>`;
+          q.choices.forEach((choice, j) => {
+            const label = document.createElement('label');
+            const input = document.createElement('input');
+            input.type = 'radio';
+            input.name = `q${i}`;
+            input.value = choice;
+            input.onchange = () => handleAnswer(i, choice, q);
+            label.appendChild(input);
+            label.append(` ${choice}`);
+            choicesDiv.appendChild(label);
           });
 
-          div.appendChild(choicesDiv);
-          div.innerHTML += `<div class="feedback" id="feedback-${i}"></div>`;
-          sectionDiv.appendChild(div);
-        }
-        quizContainer.appendChild(sectionDiv);
+          const feedback = document.createElement('div');
+          feedback.className = 'feedback';
+          feedback.id = `feedback-${i}`;
 
-        const button = document.createElement('button');
-        button.textContent = `Section ${s + 1}`;
-        button.onclick = () => {
-          document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active-section'));
-          document.getElementById(`section-${s}`).classList.add('active-section');
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
-        navButtons.appendChild(button);
+          questionDiv.appendChild(choicesDiv);
+          questionDiv.appendChild(feedback);
+          sectionDiv.appendChild(questionDiv);
+        }const nav = document.createElement('div');
+        nav.className = 'section-nav';
+        // removed redeclaration to fix quiz loading
+        for (let i = 0; i < numSections; i++) {
+          const btn = document.createElement('button');
+          btn.textContent = `Section ${i + 1}`;
+          btn.onclick = () => showSection(i);
+          nav.appendChild(btn);
+        }
+        sectionDiv.appendChild(nav);
+        quizDiv.appendChild(sectionDiv);
       }
     }
 
-    function handleSelection(index, selectedValue) {
-      if (!answeredSet.has(index)) {
-        answeredSet.add(index);
-        const q = quizData[index];
-        const container = document.querySelectorAll('.question-container')[index];
-        const feedback = document.getElementById(`feedback-${index}`);
-        const labels = container.querySelectorAll('label');
+    function handleAnswer(index, selected, question) {
+      const feedback = document.getElementById(`feedback-${index}`);
+      const correctAnswer = question.correctText;
+      const allInputs = document.getElementsByName(`q${index}`);
 
-        labels.forEach(label => {
-          const input = label.querySelector('input');
-          input.disabled = true;
-          const choiceText = label.textContent.trim();
-          label.classList.remove('correct', 'incorrect');
-          if (choiceText === q.choices[q.answer]) {
-            label.classList.add('correct');
-          } else if (choiceText === selectedValue) {
-            label.classList.add('incorrect');
-          }
-        });
+      allInputs.forEach(input => input.disabled = true);
 
-        if (selectedValue === q.choices[q.answer]) {
-          feedback.textContent = 'Correct!';
-          feedback.style.color = 'green';
-          score++;
-        } else {
-          feedback.textContent = `Incorrect. Correct answer: ${q.choices[q.answer]}`;
-          feedback.style.color = 'red';
-        }
-        updateProgress();
+      if (selected.trim() === correctAnswer.trim()) {
+        feedback.textContent = 'Correct!';
+        feedback.style.color = 'green';
+        score++;
+      } else {
+        feedback.textContent = `Incorrect. Correct answer: ${correctAnswer}`;
+        feedback.style.color = 'red';
+      }
+      updateProgress();
       }
     }
 
